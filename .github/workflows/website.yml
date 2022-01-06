@@ -33,7 +33,7 @@ jobs:
       - name: Set up Ruby
         uses: ruby/setup-ruby@v1
         with:
-          ruby-version: '2.0'
+          ruby-version: '3.0'
 
       - name: Set up Python
         uses: actions/setup-python@v2
