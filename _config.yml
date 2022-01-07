@@ -108,9 +108,6 @@ collections:
   episodes:
     output: true
     permalink: /:slug
-  episodes_rmd:
-    output: true
-    permalink: /:slug
   extras:
     output: true
     permalink: /:path/index
@@ -225,7 +222,6 @@ exclude:
   - vendor/
   - .docker-vendor/
   - submodules/
-  - collections/episodes_rmd/**/*.rmd
 
 # Turn on built-in syntax highlighting.
 highlighter: rouge
