@@ -225,6 +225,7 @@ exclude:
   - vendor/
   - .docker-vendor/
   - submodules/
+  - collections/episodes_rmd/**/*.rmd
 
 # Turn on built-in syntax highlighting.
 highlighter: rouge
