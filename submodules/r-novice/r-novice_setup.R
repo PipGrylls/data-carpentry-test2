@@ -34,6 +34,7 @@ if (!file.exists("data_raw/portal_mammals.sqlite")) {
 ## knitr options
 library(knitr)
 library(methods)
+library(shiny)
 suppressPackageStartupMessages(library(tidyverse))
 knitr::opts_chunk$set(results='hide', comment = "#>", purl = FALSE, fig.keep='last')
 
@@ -58,11 +59,10 @@ if (!is.null(knitr::current_input())){
 
 # If we are in an answer block indent by one
 hook_source <- knitr::knit_hooks$get("source")  # save the old hook
-knitr::knit_hooks$set(NAME = function(x, options) {
-    if (options$answer) {
-        for (str_idx in 1:length(x)) {
-            x[str_idx] = paste("> ", x[str_idx], sep="")
-        }
+knitr::knit_hooks$set(source = function(x, options) {
+    if (isTruthy(options$answer)) {
+        x <- xfun::split_lines(x)
+        x <- paste('> ', x, sep = '', collapse = '\n')
     }
     hook_source(x, options)
 })
@@ -75,7 +75,7 @@ knitr::knit_hooks$set(answer = function(before, options, envir) {
     } else {
     paste(
         "{: .solution}",
-        sep = "\n")
+        sep = "")
     }
 #     if (before) {
 #         paste(
@@ -93,7 +93,7 @@ eng_text_answer <- knitr:::eng_html_asset(
                                     sep = "\n"),
                                 paste(
                                     "{: .solution}",
-                                    sep = "\n")
+                                    sep = "")
 #                                paste(
 #                                    "<div class=\"accordion\">",
 #                                    "<h3 class=\"toc-ignore\">Answer</h3>",
