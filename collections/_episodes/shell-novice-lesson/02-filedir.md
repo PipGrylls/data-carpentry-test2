@@ -509,6 +509,8 @@ path: `here/there/~/elsewhere` is *not* `/Users/nelle/elsewhere`.
 > > and `../backup` means "Go up one level, then into a directory called `backup`".
 > 
 {: .solution}
+
+
 {: .challenge}
 
 > ## `ls` reading comprehension
@@ -522,6 +524,7 @@ path: `here/there/~/elsewhere` is *not* `/Users/nelle/elsewhere`.
 > ~~~
 > 
 {: .output}
+
 >
 > 1.  `ls pwd`
 > 2.  `ls -r -F`
@@ -535,6 +538,8 @@ path: `here/there/~/elsewhere` is *not* `/Users/nelle/elsewhere`.
 > > Then, in order to get the output in reverse order, and with a `/` after the directories, we need the `-r` and `-F` flags.
 > 
 {: .solution}
+
+
 {: .challenge}
 
 {% include links.md %}

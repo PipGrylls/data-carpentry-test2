@@ -102,6 +102,8 @@ option on the `Error Alert` tab (or the `Action` field in LibreOffice).
 > > This not only prevents data input errors, but also makes it easier and faster to enter data.
 > 
 {: .solution}
+
+
 {: .challenge}
 
 ### Restricting data to entries from a list
@@ -138,6 +140,8 @@ values, you can select the right option from the list every time. Let’s apply 
 > > This not only prevents data input errors, but also makes it easier and faster to enter data.
 > 
 {: .solution}
+
+
 {: .challenge}
 
 Typing a list of values where only a few possible values exist might be convenient, but if the list is longer (e.g.
@@ -209,6 +213,8 @@ If your dataset is well-structured and does not contain formulas, sorting should
     ![Image of outliers sorted at the top](../fig/sort-result.png)
 > 
 {: .solution}
+
+
 {: .challenge}
 
 ### Conditional formatting
@@ -238,6 +244,8 @@ entering data. Let's apply some to our data.
        ![Image of Conditional Formatting - result](../fig/conditional-formatting-result.png)
 > 
 {: .solution}
+
+
 {: .challenge}
 
 > ## Scanning for outliers

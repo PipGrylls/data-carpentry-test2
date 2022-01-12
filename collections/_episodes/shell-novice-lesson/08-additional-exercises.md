@@ -50,6 +50,7 @@ $ today_date=$(date +“%d-%m-%y”)
 > > 
 > > 
 > {: .bash}
+> 
 > > ~~~
 > > today_date=$(date +"%d-%m-%y")
 > > 
@@ -62,6 +63,8 @@ $ today_date=$(date +“%d-%m-%y”)
 > > 
 > 
 {: .solution}
+
+
 {: .challenge}
 
 
@@ -90,6 +93,7 @@ The `-d` argument specifies, within quotes, the delimiter that separates the col
 > >
 > >
 {: .bash}
+
 > >~~~
 > >for file in copied/*.csv
 > >do
@@ -100,6 +104,8 @@ The `-d` argument specifies, within quotes, the delimiter that separates the col
 > >
 > 
 {: .solution}
+
+
 {: .challenge}
 
 {% include links.md %}

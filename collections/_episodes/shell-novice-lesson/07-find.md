@@ -538,6 +538,8 @@ about them."
 > > 4. Incorrect. `-i` indicates we wish to do a case insensitive search which isn't required. The results are the same as 1.
 > 
 {: .solution}
+
+
 {: .challenge}
 
 
@@ -547,6 +549,7 @@ about them."
 >
 > 
 {: .bash}
+
 >~~~
 > find . -name '*.dat' | wc -l | sort -n
 > ~~~
@@ -556,6 +559,8 @@ about them."
 > > Find all files (in this directory and all subdirectories) that have a filename that ends in `.dat`, count the number of files found, and sort the result. Note that the `sort` here is unnecessary, since it is only sorting one number.
 > 
 {: .solution}
+
+
 {: .challenge}
 
 > ## Matching `ose.dat` but not `temp` {}
@@ -582,6 +587,8 @@ about them."
 > > 4. Incorrect.
 > 
 {: .solution}
+
+
 {: .challenge}
 
 {% include links.md %}

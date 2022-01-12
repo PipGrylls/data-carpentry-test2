@@ -122,6 +122,8 @@ as the 7th of December 1988. A researcher in the US will interpret the same entr
 > > entries, we would not be able to tell what date was entered! For example, is '7/11' '7th November' or '11th July'?
 > 
 {: .solution}
+
+
 {: .challenge}
 
 ## Issues with missing bits of dates
@@ -158,6 +160,8 @@ variable.
 > >  the year in which the data was entered into the spreadsheet. This exemplifies how easy it is to introduce errors in dates.
 > 
 {: .solution}
+
+
 {: .challenge}
 
 ### Dates with 2-digit year
@@ -185,6 +189,8 @@ For example, [Excel determines the century](https://docs.microsoft.com/en-us/off
 > > - 1/1/99 = 1999-Jan-1
 > 
 {: .solution}
+
+
 {: .challenge}
 
 > ## Note on missing bits of dates
@@ -217,6 +223,8 @@ For example, [Excel determines the century](https://docs.microsoft.com/en-us/off
 > > As you can see, exporting data from a spreadsheet program and then importing it back again can fundamentally change the data!
 > 
 {: .solution}
+
+
 {: .challenge}
 
 > ## Note on exporting
@@ -285,6 +293,8 @@ According to Excel, this person had been collecting bugs over a number of years,
 > > Excel managed to "mask" this error.
 > 
 {: .solution}
+
+
 {: .challenge}
 
 As for dates, times are handled in a similar way and there are functions to extract hours, minutes and seconds.
@@ -311,6 +321,8 @@ As for dates, times are handled in a similar way and there are functions to extr
 > > 3. To extract the hour, type `=HOUR(NOW()-TODAY())` and similarly for minute and second.
 > 
 {: .solution}
+
+
 {: .challenge}
 
 ### <a name="str"></a> Storing dates as a single string

@@ -302,6 +302,7 @@ the tabs '2013' and '2014', respectively.
 > > modify your original (raw) data.
 > 
 {: .callout}
+
 >
 > > ## Solution
 > > When you finish, compare your clean spreadsheet with the structure suggested below or with 
@@ -321,6 +322,8 @@ the tabs '2013' and '2014', respectively.
 > > components in 3 separate columns in [surveys.csv](https://ndownloader.figshare.com/files/2292172) in the [next episode on formatting dates in spreadsheets](../03-dates-as-data/).
 > 
 {: .solution}
+
+
 {: .challenge}
 
 > ## Full & clean dataset

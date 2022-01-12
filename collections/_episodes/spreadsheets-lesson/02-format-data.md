@@ -147,12 +147,15 @@ the tabs '2013' and '2014', respectively.
 > > modify your original (raw) data.
 > 
 {: .callout}
+
 >
 > > ## Solution
 > > All the mistakes in this messy dataset are addressed in the [next episode](../02-common-mistakes).
 > > You can refer to it to check if you spotted them all and go back and fix your spreadsheet.
 > 
 {: .solution}
+
+
 {: .challenge}
 
 > ## Full & clean dataset

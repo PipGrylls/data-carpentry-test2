@@ -120,6 +120,8 @@ misspelled and mistyped entries in a later exercise.
 > > 
 > 
 {: .solution}
+
+
 {: .challenge}
 
 > ## Default data type 
@@ -154,6 +156,8 @@ and from black to green.
 > >
 > 
 {: .solution}
+
+
 {: .challenge}
 
 Facets for working with numbers, including numeric and scatterplot facets, display graphs instead of lists of values. 

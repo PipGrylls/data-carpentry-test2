@@ -118,6 +118,8 @@ Therefore, when you now split with space as the separator, you should get only t
 > > as before. You should now get only two columns `scientificName 1` and `scientificName 2`.
 > 
 {: .solution}
+
+
 {: .challenge}
  
 ## Renaming columns
@@ -142,6 +144,8 @@ We want to rename these as `genus` and `species`, respectively.
 > > `species` column name to `species_abbreviation` and then come back and rename this column to `species`.
 > 
 {: .solution}
+
+
 {: .challenge}
 
 **Important:** Undo the splitting and renaming steps and retain the white space trimming step 

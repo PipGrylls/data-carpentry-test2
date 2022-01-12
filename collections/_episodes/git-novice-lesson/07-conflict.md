@@ -390,6 +390,7 @@ or find a way to divide the work up differently.
 > What does Git do
 > when there is a conflict in an image or some other non-textual file
 > that is stored in version control?
+
 {: .challenge}
 
 {% include links.md %}

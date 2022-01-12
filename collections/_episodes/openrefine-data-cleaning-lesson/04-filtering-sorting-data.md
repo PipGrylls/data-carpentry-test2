@@ -54,6 +54,8 @@ You can also filter data using other types of facets - let's do it as an exercis
 > >
 > 
 {: .solution}
+
+
 {: .challenge}
 
 ### Text filters
@@ -85,6 +87,8 @@ and reinstate the text facet on the `scientificName` column.
 > >
 > 
 {: .solution}
+
+
 {: .challenge}
 
 **Important:** Make sure both species are included in your filtered dataset before continuing with the rest of the exercises.
@@ -131,6 +135,8 @@ specify where to place Blanks and Errors in the sorted results.
 > > values as numbers for the purposes of sorting, but will keep the underlying data type unchanged.
 > 
 {: .solution}
+
+
 {: .challenge}
 
 The first time you sort a column, the first option will present as `Sort...`. If you re-sort a column that you
@@ -159,6 +165,8 @@ you remove the sort.
 > > 
 > 
 {: .solution}
+
+
 {: .challenge}
 
 ### Sorting by multiple columns
@@ -189,7 +197,9 @@ alone` box in the `Sort` pop-up menu.
 > > that all entries are shown chronologically, you will need to add a third sorting step to sort data by day (using the column `dy`). 
 > > 
 > 
-{: .solution}  
+{: .solution}
+  
+
 {: .challenge}
 
 If you go back to one of the already sorted columns and select `Sort` > `Remove sort`, that column is removed from
@@ -201,6 +211,7 @@ your multiple sort. If it is the only column sorted, then the data revert to the
 > (`largest to smallest` or `z to a`).
 >
 > Use `Sort` > `Remove sort` to remove the sort on the second of three columns. Notice how that changes the order.
+
 {: .challenge}
 
 >## Sorting does not change data

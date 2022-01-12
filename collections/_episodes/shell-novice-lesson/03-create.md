@@ -437,6 +437,8 @@ but it does find the copy in `thesis` that we didn't delete.
 > > Both **1** and **2** will leave you with a file called `statistics.txt` at the end, but if you use `cp` it will be a copy, and you'll still have your incorrectly-named original.
 > 
 {: .solution}
+
+
 {: .challenge}
 
 > ## Moving and Copying
@@ -452,6 +454,7 @@ but it does find the copy in `thesis` that we didn't delete.
 > ~~~
 > 
 {: .output}
+
 > ~~~
 > $ ls
 > ~~~
@@ -461,6 +464,7 @@ but it does find the copy in `thesis` that we didn't delete.
 > ~~~
 > 
 {: .output}
+
 > ~~~
 > $ mkdir recombine
 > $ mv proteins.dat recombine
@@ -484,6 +488,8 @@ but it does find the copy in `thesis` that we didn't delete.
 > > So as it's in the directory above the current one (`..`), it won't show up when you do `ls` in the current directory.
 > 
 {: .solution}
+
+
 {: .challenge}
 
 > ## Organizing Directories and Files
@@ -501,6 +507,7 @@ but it does find the copy in `thesis` that we didn't delete.
 > ~~~
 > 
 {: .output}
+
 >
 > The `fructose.dat` and `sucrose.dat` files contain output from her data
 > analysis. What command(s) covered in this lesson does she need to run so that the commands below will produce the output shown?
@@ -515,6 +522,7 @@ but it does find the copy in `thesis` that we didn't delete.
 > ~~~
 > 
 {: .output}
+
 >
 > ~~~
 > $ ls analyzed
@@ -526,6 +534,7 @@ but it does find the copy in `thesis` that we didn't delete.
 > ~~~
 > 
 {: .output}
+
 >
 > > ## Solution
 > >
@@ -541,6 +550,8 @@ but it does find the copy in `thesis` that we didn't delete.
 > > {: .language-bash}
 > 
 {: .solution}
+
+
 {: .challenge}
 
 > ## Copy with Multiple Filenames
@@ -568,7 +579,9 @@ but it does find the copy in `thesis` that we didn't delete.
 > > 
 > {: .output}
 > 
+> 
 {: .solution}
+
 >
 > What does `cp` do when given three or more filenames, as in:
 >
@@ -582,6 +595,7 @@ but it does find the copy in `thesis` that we didn't delete.
 > ~~~
 > 
 {: .output}
+
 >
 > ~~~
 > $ cp intro.txt methods.txt survey.txt
@@ -602,6 +616,8 @@ but it does find the copy in `thesis` that we didn't delete.
 > > of `intro.txt` *over* the contents of `methods.txt`. So be careful!
 > 
 {: .solution}
+
+
 {: .challenge}
 
 {% include links.md %}

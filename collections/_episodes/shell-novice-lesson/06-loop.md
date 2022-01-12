@@ -317,6 +317,7 @@ GTTCTGCTAA
 > ~~~
 > 
 {: .bash}
+
 >
 > then the shell will expand `*.dat` to create:
 >
@@ -350,6 +351,7 @@ GTTCTGCTAA
 > ~~~
 > 
 {: .bash}
+
 >
 > but it's simpler just to avoid using spaces (or other special characters) in filenames.
 {: .callout}
@@ -422,6 +424,7 @@ files before you operate on them!
 > ~~~
 > 
 {: .bash}
+
 >
 > Instead of running `mv`, this loop runs `echo`, which prints out:
 >
@@ -431,6 +434,7 @@ files before you operate on them!
 > ~~~
 > 
 {: .bash}
+
 >
 > *without* actually running those commands. We can then use up-arrow to
 > redisplay the loop, back-arrow to get to the word `echo`, delete it, and
@@ -451,6 +455,7 @@ files before you operate on them!
 > ~~~
 > 
 {: .output}
+
 >
 > What is the output of:
 >
@@ -462,6 +467,7 @@ files before you operate on them!
 > ~~~
 > 
 {: .bash}
+
 >
 > Now, what is the output of:
 >
@@ -473,6 +479,7 @@ files before you operate on them!
 > ~~~
 > 
 {: .bash}
+
 >
 > Why do these two loops give you different outputs?
 >
@@ -487,11 +494,14 @@ files before you operate on them!
 > > ~~~
 > > 
 > {: .output}
+> 
 > >
 > > This is because, whilst it runs once for each file containing `.dat`, it doesn't use the loop variable, it prints out the *entire* output of `ls`. The second version will instead print out each datafile on a seperate line (as `ls [file]` will print the file if it exists).
 > >
 > 
 {: .solution}
+
+
 {: .challenge}
 
 
@@ -508,6 +518,7 @@ files before you operate on them!
 > ~~~
 > 
 {: .bash}
+
 >
 > 1.  Prints `fructose.dat`, `glucose.dat`, and `sucrose.dat`, and the text from `sucrose.dat` will be saved to a file called `xylose.dat`.
 > 2.  Prints `fructose.dat`, `glucose.dat`, and `sucrose.dat`, and the text from all three files would be
@@ -524,6 +535,8 @@ files before you operate on them!
 > > 4. Incorrect.
 > 
 {: .solution}
+
+
 {: .challenge}
 
 
@@ -536,6 +549,7 @@ files before you operate on them!
 > ~~~
 > 
 {: .output}
+
 >
 > What would be the output of the following loop?
 >
@@ -547,6 +561,7 @@ files before you operate on them!
 > ~~~
 > 
 {: .bash}
+
 >
 > 1.  All of the text from `fructose.dat`, `glucose.dat` and `sucrose.dat` would be
 >     concatenated and saved to a file called `sugar.dat`.
@@ -564,6 +579,8 @@ files before you operate on them!
 > > 4. Incorrect, since the `>>` operator redirects all output to the `sugar.dat` file, so we won't see any screen output.
 > 
 {: .solution}
+
+
 {: .challenge}
 
 
@@ -574,6 +591,7 @@ files before you operate on them!
 >
 > 
 {: .bash}
+
 > ~~~
 > for file in *.dat
 > do
@@ -586,6 +604,7 @@ files before you operate on them!
 >
 > 
 {: .bash}
+
 > ~~~
 > # Version 1
 > for file in *.dat
@@ -596,6 +615,7 @@ files before you operate on them!
 >
 > 
 {: .bash}
+
 > ~~~
 > # Version 2
 > for file in *.dat
@@ -609,6 +629,8 @@ files before you operate on them!
 > > Version 2 is the one that successfully acts as a dry run. In version 1, since the `>` file redirect is not within quotes, the script will create three files `analyzed-basilisk.dat`, `analyzed-minotaur.dat`, and `analyzed-unicorn.dat` which is not what we want.
 > 
 {: .solution}
+
+
 {: .challenge}
 
 {% include links.md %}
