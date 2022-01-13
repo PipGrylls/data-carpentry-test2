@@ -1183,13 +1183,13 @@ functions to get a sense of the content/structure of the data. Let's try them ou
 > * What is the class of the object `surveys`?
 > * How many rows and how many columns are in this object?
 >
-> ```{r, answer=TRUE, purl=FALSE}
->
+> ```{r, purl=FALSE}
 > str(surveys)
+> ```
 >
-> ## * class: data frame
-> ## * how many rows: 34786,  how many columns: 13
->
+> ```{text_answer, echo=FALSE, purl=FALSE}
+> * class: data frame
+> * how many rows: 34786,  how many columns: 13
 > ```
 {: .challenge}
 
