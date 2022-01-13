@@ -512,7 +512,6 @@ In some collaborations, only some people have permission to **merge pull request
 > 
 {: .solution}
 
-
 {: .challenge}
 
 {% include links.md %}

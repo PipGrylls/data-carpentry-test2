@@ -360,7 +360,6 @@ If you're interested in how pipes work in more technical detail, see the descrip
 > 
 {: .solution}
 
-
 {: .challenge}
 
 > ## What does `>>` mean?
@@ -387,7 +386,6 @@ If you're interested in how pipes work in more technical detail, see the descrip
 > 
 {: .solution}
 
-
 {: .challenge}
 
 > ## Piping commands together
@@ -406,7 +404,6 @@ If you're interested in how pipes work in more technical detail, see the descrip
 > > **1** has the correct commands, but incorrectly tries to use `>` to chain them together. `>` is used to send the output of a command to a **file**, not to another command.
 > 
 {: .solution}
-
 
 {: .challenge}
 
@@ -447,7 +444,6 @@ If you're interested in how pipes work in more technical detail, see the descrip
 > > In this case, `sort | uniq` would work.
 > 
 {: .solution}
-
 
 {: .challenge}
 
@@ -502,7 +498,6 @@ If you're interested in how pipes work in more technical detail, see the descrip
 > >
 > 
 {: .solution}
-
 
 {: .challenge}
 

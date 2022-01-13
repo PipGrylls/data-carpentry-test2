@@ -408,7 +408,6 @@ wc -l "$@" | sort -n
 > 
 {: .solution}
 
-
 {: .challenge}
 
 > ## Script reading comprehension
@@ -470,7 +469,6 @@ wc -l "$@" | sort -n
 > > This probably isn't quite what we were hoping for!
 > 
 {: .solution}
-
 
 {: .challenge}
 

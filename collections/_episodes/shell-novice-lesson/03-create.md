@@ -438,7 +438,6 @@ but it does find the copy in `thesis` that we didn't delete.
 > 
 {: .solution}
 
-
 {: .challenge}
 
 > ## Moving and Copying
@@ -488,7 +487,6 @@ but it does find the copy in `thesis` that we didn't delete.
 > > So as it's in the directory above the current one (`..`), it won't show up when you do `ls` in the current directory.
 > 
 {: .solution}
-
 
 {: .challenge}
 
@@ -550,7 +548,6 @@ but it does find the copy in `thesis` that we didn't delete.
 > > {: .language-bash}
 > 
 {: .solution}
-
 
 {: .challenge}
 
@@ -616,7 +613,6 @@ but it does find the copy in `thesis` that we didn't delete.
 > > of `intro.txt` *over* the contents of `methods.txt`. So be careful!
 > 
 {: .solution}
-
 
 {: .challenge}
 

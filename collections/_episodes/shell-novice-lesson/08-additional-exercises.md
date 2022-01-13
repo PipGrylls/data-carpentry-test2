@@ -64,7 +64,6 @@ $ today_date=$(date +“%d-%m-%y”)
 > 
 {: .solution}
 
-
 {: .challenge}
 
 
@@ -104,7 +103,6 @@ The `-d` argument specifies, within quotes, the delimiter that separates the col
 > >
 > 
 {: .solution}
-
 
 {: .challenge}
 

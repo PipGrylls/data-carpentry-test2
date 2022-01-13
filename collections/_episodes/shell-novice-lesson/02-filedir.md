@@ -510,7 +510,6 @@ path: `here/there/~/elsewhere` is *not* `/Users/nelle/elsewhere`.
 > 
 {: .solution}
 
-
 {: .challenge}
 
 > ## `ls` reading comprehension
@@ -538,7 +537,6 @@ path: `here/there/~/elsewhere` is *not* `/Users/nelle/elsewhere`.
 > > Then, in order to get the output in reverse order, and with a `/` after the directories, we need the `-r` and `-F` flags.
 > 
 {: .solution}
-
 
 {: .challenge}
 

@@ -55,7 +55,6 @@ You can also filter data using other types of facets - let's do it as an exercis
 > 
 {: .solution}
 
-
 {: .challenge}
 
 ### Text filters
@@ -87,7 +86,6 @@ and reinstate the text facet on the `scientificName` column.
 > >
 > 
 {: .solution}
-
 
 {: .challenge}
 
@@ -136,7 +134,6 @@ specify where to place Blanks and Errors in the sorted results.
 > 
 {: .solution}
 
-
 {: .challenge}
 
 The first time you sort a column, the first option will present as `Sort...`. If you re-sort a column that you
@@ -165,7 +162,6 @@ you remove the sort.
 > > 
 > 
 {: .solution}
-
 
 {: .challenge}
 
@@ -199,7 +195,6 @@ alone` box in the `Sort` pop-up menu.
 > 
 {: .solution}
   
-
 {: .challenge}
 
 If you go back to one of the already sorted columns and select `Sort` > `Remove sort`, that column is removed from
@@ -211,7 +206,6 @@ your multiple sort. If it is the only column sorted, then the data revert to the
 > (`largest to smallest` or `z to a`).
 >
 > Use `Sort` > `Remove sort` to remove the sort on the second of three columns. Notice how that changes the order.
-
 {: .challenge}
 
 >## Sorting does not change data

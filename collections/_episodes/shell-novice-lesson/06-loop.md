@@ -501,7 +501,6 @@ files before you operate on them!
 > 
 {: .solution}
 
-
 {: .challenge}
 
 
@@ -535,7 +534,6 @@ files before you operate on them!
 > > 4. Incorrect.
 > 
 {: .solution}
-
 
 {: .challenge}
 
@@ -579,7 +577,6 @@ files before you operate on them!
 > > 4. Incorrect, since the `>>` operator redirects all output to the `sugar.dat` file, so we won't see any screen output.
 > 
 {: .solution}
-
 
 {: .challenge}
 
@@ -629,7 +626,6 @@ files before you operate on them!
 > > Version 2 is the one that successfully acts as a dry run. In version 1, since the `>` file redirect is not within quotes, the script will create three files `analyzed-basilisk.dat`, `analyzed-minotaur.dat`, and `analyzed-unicorn.dat` which is not what we want.
 > 
 {: .solution}
-
 
 {: .challenge}
 

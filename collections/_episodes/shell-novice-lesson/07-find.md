@@ -539,7 +539,6 @@ about them."
 > 
 {: .solution}
 
-
 {: .challenge}
 
 
@@ -559,7 +558,6 @@ about them."
 > > Find all files (in this directory and all subdirectories) that have a filename that ends in `.dat`, count the number of files found, and sort the result. Note that the `sort` here is unnecessary, since it is only sorting one number.
 > 
 {: .solution}
-
 
 {: .challenge}
 
@@ -587,7 +585,6 @@ about them."
 > > 4. Incorrect.
 > 
 {: .solution}
-
 
 {: .challenge}
 

@@ -119,7 +119,6 @@ Therefore, when you now split with space as the separator, you should get only t
 > 
 {: .solution}
 
-
 {: .challenge}
  
 ## Renaming columns
@@ -144,7 +143,6 @@ We want to rename these as `genus` and `species`, respectively.
 > > `species` column name to `species_abbreviation` and then come back and rename this column to `species`.
 > 
 {: .solution}
-
 
 {: .challenge}
 

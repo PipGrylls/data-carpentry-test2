@@ -121,7 +121,6 @@ misspelled and mistyped entries in a later exercise.
 > 
 {: .solution}
 
-
 {: .challenge}
 
 > ## Default data type 
@@ -156,7 +155,6 @@ and from black to green.
 > >
 > 
 {: .solution}
-
 
 {: .challenge}
 

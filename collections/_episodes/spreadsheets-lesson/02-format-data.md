@@ -155,7 +155,6 @@ the tabs '2013' and '2014', respectively.
 > 
 {: .solution}
 
-
 {: .challenge}
 
 > ## Full & clean dataset
