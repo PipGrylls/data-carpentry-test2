@@ -195,7 +195,7 @@ head(sex)
 >  * Now that we have renamed the factor level to "undetermined", can you recreate the
 > barplot such that "undetermined" is last (after "male")?
 >
-> ```{r, answer=TRUE, eval=FALSE, purl=FALSE}
+> ```{r, answer=TRUE, eval=FALSE, purl=FALSE, results = 'markdown'}
 > levels(sex)[2:3] <- c("female", "male")
 > sex <- factor(sex, levels = c("female", "male", "undetermined"))
 > plot(sex)
@@ -211,7 +211,7 @@ head(sex)
 >
 > * Create a barplot of `hindfoot_length`
 >
-> ```{r, answer=TRUE, eval=FALSE, purl=FALSE}
+> ```{r, answer=TRUE, eval=FALSE, purl=FALSE, results = 'markdown'}
 > surveys$hindfoot_length[surveys$hindfoot_length <= 10] <- "0-10"
 > surveys$hindfoot_length[surveys$hindfoot_length > 10 & surveys$hindfoot_length <= 20] <- "11-20"
 > surveys$hindfoot_length[surveys$hindfoot_length > 20 & surveys$hindfoot_length <= 30] <- "21-30"
@@ -524,7 +524,7 @@ Note that the final data frame is the leftmost part of this expression.
 >  1995 and retain only the columns `year`, `sex`, and `weight`.
 >
 >
-> ```{r, answer=TRUE, eval=FALSE, purl=FALSE}
+> ```{r, answer=TRUE, eval=FALSE, purl=FALSE, results = 'markdown'}
 > surveys %>%
 >     filter(year < 1995) %>%
 >     select(year, sex, weight)
@@ -542,19 +542,13 @@ Note that the final data frame is the leftmost part of this expression.
 > surveys_4 <- filter(surveys_3, plot_type == 'Control')
 > surveys_5 <- select(surveys_4, record_id, month, day, year, sex, weight)
 > surveys_final <- select(surveys_5, -day)
+> ```
 >
-> ```{r, answer=TRUE, eval=FALSE, purl=FALSE}
+> ```{r, answer=TRUE, eval=FALSE, purl=FALSE, results = 'markdown'}
 > surveys_final <- surveys %>%
 >     filter(year < 1995, year != 2001, plot_type == 'Control') %>%
 >     select(record_id, month, year, sex, weight)
 > ```
-{.challenge}
-
-```{r, eval=FALSE, purl=TRUE, echo=FALSE}
-## Pipes Challenge:
-##  Using pipes, subset the data to include animals collected
-##  before 1995, and retain the columns `year`, `sex`, and `weight.`
-```
 {.challenge}
 
 ### Mutate
@@ -611,7 +605,7 @@ symbol negates the result, so we're asking for every row where weight *is not* a
 >
 >  **Hint**: think about how the commands should be ordered to produce this data frame!
 >
-> ```{r, answer=TRUE, eval=FALSE, purl=FALSE}
+> ```{r, answer=TRUE, eval=FALSE, purl=FALSE, results = 'markdown'}
 > surveys_hindfoot_cm <- surveys %>%
 >     filter(!is.na(hindfoot_length)) %>%
 >     mutate(hindfoot_cm = hindfoot_length / 10) %>%
@@ -627,7 +621,7 @@ symbol negates the result, so we're asking for every row where weight *is not* a
 > less than or equal to the mean weight and `2` if the weight is more than the
 > mean weight.
 >
-> ```{r, answer=TRUE, eval=FALSE, purl=FALSE}
+> ```{r, answer=TRUE, eval=FALSE, purl=FALSE, results = 'markdown'}
 > surveys_simplified <- surveys %>%
 >      mutate(weight_simplified =
 >        ifelse(weight <= mean(weight, na.rm = TRUE), 1, 2))
@@ -795,7 +789,7 @@ according to a number of criteria so that we have a better comparison.
 For instance, we might want to arrange the table above in (i) an alphabetical order of
 the levels of the species and (ii) in descending order of the count:
 
-```{r purl = FALSE}
+```{r, purl = FALSE}
 surveys %>%
   count(sex, species) %>%
   arrange(species, desc(n))
@@ -808,7 +802,7 @@ the *albigula* species that are not specified for its sex (i.e. `NA`).
 >
 > 1. How many animals were caught in each `plot_type` surveyed?
 >
-> ```{r, answer=TRUE, purl=FALSE}
+> ```{r, answer=TRUE, purl=FALSE, results='markdown'}
 > surveys %>%
 >     count(plot_type)
 > ```
@@ -817,7 +811,7 @@ the *albigula* species that are not specified for its sex (i.e. `NA`).
 > length for each species (using `species_id`). Also add the number of
 > observations (hint: see `?n`).
 >
-> ```{r, answer=TRUE, purl=FALSE}
+> ```{r, answer=TRUE, purl=FALSE, results='markdown'}
 > surveys %>%
 >     filter(!is.na(hindfoot_length)) %>%
 >     group_by(species_id) %>%
@@ -832,7 +826,7 @@ the *albigula* species that are not specified for its sex (i.e. `NA`).
 > 3. What was the heaviest animal measured in each year? Return the columns `year`,
 > `genus`, `species_id`, and `weight`.
 >
-> ```{r, answer=TRUE, purl=FALSE}
+> ```{r, answer=TRUE, purl=FALSE, results='markdown'}
 > surveys %>%
 >     filter(!is.na(weight)) %>%
 >     group_by(year) %>%
@@ -982,8 +976,8 @@ surveys_wide %>%
 >   genera within a particular chunk of data. It's a powerful function! See
 >   `?n_distinct` for more.
 >
-> ```{r, answer=TRUE, purl=FALSE}
->surveys_wide_genera <- surveys %>%
+> ```{r, answer=TRUE, purl=FALSE, results='markdown'}
+> surveys_wide_genera <- surveys %>%
 >   group_by(plot_id, year) %>%
 >    summarize(n_genera = n_distinct(genus))%>%
 >    pivot_wider(names_from = year, values_from = n_genera)
@@ -994,7 +988,7 @@ surveys_wide %>%
 > 2. Now take that data frame and `pivot_longer()` it again, so each row is a unique
 >    `plot_id` by `year` combination.
 >
-> ```{r, answer=TRUE, purl=FALSE}
+> ```{r, answer=TRUE, purl=FALSE, results='markdown'}
 > surveys_wide_genera %>%
 >   pivot_longer(cols = -plot_id, names_to = 'year', values_to = 'n_genera')
 > ```
@@ -1008,7 +1002,7 @@ surveys_wide %>%
 >    `value` column that takes on the value of either `hindfoot_length` or
 >    `weight`. *Hint*: You'll need to specify which columns are being pivoted.
 >
-> ```{r, answer=TRUE, purl=FALSE}
+> ```{r, answer=TRUE, purl=FALSE, results='markdown'}
 > surveys_long <- surveys %>%
 >   pivot_longer(cols = c(hindfoot_length, weight), names_to = "measurement", values_to = "value")
 > ```
@@ -1019,7 +1013,7 @@ surveys_wide %>%
 >    `weight`. *Hint*: You only need to specify the name and value
 >    columns for `pivot_wider()`.
 >
-> ```{r, answer=TRUE, purl=FALSE}
+> ```{r, answer=TRUE, purl=FALSE, results='markdown'}
 > surveys_long %>%
 >   group_by(year, measurement, plot_type) %>%
 >   summarize(mean_value = mean(value, na.rm=TRUE)) %>%
